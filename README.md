@@ -70,7 +70,8 @@
   
 ## Envirenment install
    pip2 install tensorflow-gpu 
-   If has python2 and python3, default pip install will into python3
+   
+   If install python2 and python3 into machine, default pip install will into python3
 
 ## Training
 ### [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html)
