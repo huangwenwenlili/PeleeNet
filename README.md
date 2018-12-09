@@ -68,6 +68,10 @@
         $ tar -zxvf cifar-10-python.tar.gz
         # you will see that data_batch_* are stored in './data/cifar10/cifar-10-batches-py/'
   
+## Envirenment install
+   pip2 install tensorflow-gpu 
+   If has python2 and python3, default pip install will into python3
+
 ## Training
 ### [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html)
 
@@ -96,12 +100,13 @@
         python main.py --batchsize=128 \
                        --is_training=True \
                        --is_testing=False \ 
-                       --datasets=cifar10 \
+                       --dataset=cifar10 \
                        --input_height=32 \
                        --input_width=32 \
-                       --input_channels=3 \
+                       --input_channel=3 \
                        --num_class=10
-
+     #notes, If tensorflow is CPU version, CUDA_VISIBLE_DEVICES will not enable.
+     
 ## Results
 ### Classification
   - After training, you can see that the testing accuracy rate can reach to **89.83%**.
